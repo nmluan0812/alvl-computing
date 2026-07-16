@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>NAPFA results</title>
+		<meta charset='utf-8'>
+		<style>
+			body{
+				background-color:#F2F194;
+				font-family:"Segoe UI";
+			}
+			th{
+				background-color:black;
+				color: white;
+			}
+			.situp{
+				background-color:#056A75;
+				color: white;
+			}
+			.pushup{
+				background-color:#8D2EC7;
+				color: white;
+			}
+			.run{
+				background-color:#DBAC32;
+				color: black;
+			}
+			.overall{
+				background-color:#94827C;
+				color: white;
+			}
+			form{
+				background-color:gold;
+				width:400px;
+				padding:20px
+			}
+			
+		</style>
+	</head>
+	<body>
+		<h1>NAPFA Performance Tracker</h1>
+		<a href="https://www.moe.gov.sg">View MOE website</a>
+		<section>
+			<h2>My past performance</h2>
+			<img src="static/Nguyen Manh Luan.jpg" alt="Nguyen Manh Luan" width=100px height=100px>
+			<table>
+				<tr>
+					<th>Category</th>
+					<th>Result</th>
+				</tr>
+				<tr class="situp">
+					<td>Sit-ups</td>
+					<td>30</td>
+				</tr>
+				<tr class="pushup">
+					<td>Push-ups</td>
+					<td>20</td>
+				</tr>
+				<tr class="run">
+					<td>2.4 km run</td>
+					<td>13 minutes</td>
+				</tr>
+				<tr class="overall">
+					<td><b>Overall NAPFA award</b></td>
+					<td><b>Bronze</b></td>
+				</tr>
+			</table>
+		</section>
+		<section>
+			<h2>Submit new record</h2>
+			<form>
+				<label>Sit-ups</label>
+				<input type="number">
+				<br>
+				<label>Push-ups</label>
+				<input type="number">
+				<br>
+				<label>2.4 run</label>
+				<input type="text">
+				<br>
+				<label>Remarks</label>
+				<textarea></textarea>
+				<br>
+				<input type="submit" value="Confirm NAPFA Results">
+			</form>
+		</section>
+	</body>
+</html>

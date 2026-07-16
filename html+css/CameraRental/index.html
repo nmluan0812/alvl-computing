@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>camera rental</title>
+    <meta charset="utf-8">
+	<link href = "styles.css" rel = "stylesheet">
+  </head>
+  <body>
+	<header>
+		<h1>Camera Rental Request</h1>
+	</header>
+	<section class = "content">
+		<h2>Cameras for rent</h2>
+		<table>
+			<tr>
+				<th>Image</th>
+				<th>Camera</th>
+				<th>Description</th>
+				<th>Pricing</th>
+			</tr>
+			<tr>
+				<td><img src="markiv.jpg" alt="Canon EOS 5D Mark IV" width=100px height=100px></td>
+				<td>Canon EOS 5D Mark IV</td>
+				<td>A game changer for creatives shooting both stills and video, and has evolved to become a key part of Canon’s mirrorless series.</td>
+				<td>$30/day</td>
+			</tr>
+			<tr>
+				<td><img src="Nikon_D750_01.jpg" alt="Nikon D750" width=130px height=100px></td>
+				<td>Nikon D750</td>
+				<td>The D750 captures an impressive level of sharp detail, and noise is controlled well.</td>
+				<td>$25/day</td>
+			</tr>
+			<tr>
+				<td><img src="sony.jpg" alt="Sony A7 III" width=130px height=100px></td>
+				<td>Sony A7 III</td>
+				<td>The full-frame, 24MP sensor with 10fps bursts is still a popular budget model among Sony’s mirrorless lineup.</td>
+				<td>$20/day</td>
+			</tr>
+		</table>
+		<h2>Rent cameras:</h2>
+		<form>
+			<label for="product" method="post">Choose a product:</label>
+			<select name="product" id="product">
+				<option value="canon">Canon EOS 5D Mark IV</option>
+				<option value="nikon">Nikon D750</option>
+				<option value="sony">Sony A7 III</option>
+			</select>
+			<label for="duration">Rent duration (in days):</label>
+			<input type=number name = "duration" min = "1" max = "7">
+			<br>
+			<label for="requests">Additional requests:</label>
+			<textarea id="requests" name="requests" rows="6" cols="50" placeholder="Enter your requests."></textarea>
+			<label for="email">Email address:</label>
+			<input type="email" name="email" placeholder = "yourname@gmail.com">
+			<input type="submit" value="Submit">
+		</form>
+	</section>
+	<footer>
+		<p>insert the copyright message here.</p>
+	</footer>
+
+  </body>
+</html>
